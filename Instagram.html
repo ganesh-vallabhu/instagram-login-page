@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="C:\Users\ASUS\OneDrive\Desktop\instagram.jpeg"
+type="image/jpeg">
+<title>Instagram</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .container {
+        text-align: center;
+        width: 300px;
+    }
+    .logo {
+        font-family: 'Brush Script MT', cursive;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    input, .login-btn {
+        width: 100%;
+        padding: 10px;
+        margin: 4px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box; /* Ensures exact same width */
+    }
+    .login-btn {
+        background-color: #0095f6;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .or {
+        display: flex;
+        align-items: center;
+        color: #888;
+        margin: 15px 0;
+    }
+    .or::before, .or::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid #ccc;
+    }
+    .or span {
+        padding: 0 10px;
+    }
+    .fb-login {
+        color: #385185;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .footer {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="logo">Instagram</div>
+    <form onsubmit="event.preventDefault(); window.location.href='https://www.instagram.com/';">
+        <input type="text" placeholder="Phone number, username, or email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="login-btn" type="submit">Log in</button>
+    </form>
+    <div class="or"><span>OR</span></div>
+    <a class="fb-login" href="https://www.facebook.com/login/">Log in with Facebook</a>
+    <div class="footer">
+        <p><a href="#">Forgot password?</a></p><br>
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+</div>
+</body>
+</html>
